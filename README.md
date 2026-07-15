@@ -8,8 +8,8 @@ The demo tells a coherent story — *"emergency vendor costs are escalating in N
 
 ```
 .
-├── config.ipynb            # ⭐ EDIT THIS — the single place to configure the whole demo
-├── utility_ops_demo.ipynb  # ⭐ RUN THIS — orchestrator: narrated Steps 1-6, inline UI prompts
+├── config.ipynb            #  EDIT THIS — the single place to configure the whole demo
+├── utility_ops_demo.ipynb  #  RUN THIS — orchestrator: narrated Steps 1-6, inline UI prompts
 ├── 1-data/                 # Generate the 13 source tables (~11.5M rows)
 │   ├── generate.py / .ipynb
 │   └── sanity_sql.py / .ipynb
@@ -28,7 +28,7 @@ The demo tells a coherent story — *"emergency vendor costs are escalating in N
 └── 6-app/                  # FastAPI / static UI Databricks App
     ├── app.py              # backend: SSE streaming + in-app Q&A cache
     ├── app.yaml
-    ├── deploy_app.ipynb    # ⭐ create app → GRANT the SP → deploy (grants baked in)
+    ├── deploy_app.ipynb    # create app → GRANT the SP → deploy (grants baked in)
     ├── deploy.sh           # same flow for local/CLI use (create → grant → deploy)
     ├── grant_app_sp.sh     # applies all downstream grants (driven by grants.env)
     ├── grants.env          # the resources the app SP must reach (endpoints, Genie IDs, warehouse, UC)
